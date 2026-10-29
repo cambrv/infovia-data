@@ -1,0 +1,58 @@
+[
+  {
+    "geometryId": "osm-referencia-03",
+    "name": "Nueva Loja - El Reventador",
+    "source": "public/geo/infovia_ec_trazados_pendientes_osm.geojson#osm-referencia-03: nota_geografica identifica Lago Agrio con Nueva Loja"
+  },
+  {
+    "geometryId": "osm-v2-quininde-esmeraldas",
+    "name": "QUININDE - EL MIRADOR - ESMERALDAS",
+    "source": "https://prefecturadeesmeraldas.gob.ec/index.php/2026/01/21/avanza-en-un-90-la-rehabilitacion-de-la-via-e20-el-mirador-union-manabita-en-quininde/"
+  },
+  {
+    "geometryId": "osm-v2-interoceanica-playon",
+    "name": "INTEROCEANICA - LA BONITA - EL PLAYON",
+    "source": "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2024/05/RVE-MIE22MAY.pdf"
+  },
+  {
+    "geometryId": "osm-v2-empalme-celica-alamor",
+    "name": "EL EMPALME - CELICA - ALAMOR",
+    "source": "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2017/01/LOTAIP_1_175200000.506.4188-CELICA-ALAMOR.pdf"
+  },
+  {
+    "geometryId": "osm-v2-alamor-arenillas",
+    "name": "ALAMOR - ARENILLAS",
+    "source": "https://www.mit.gob.ec/mtop-habilito-la-via-arenillas-puente-puyango-alamor/"
+  },
+  {
+    "geometryId": "osm-v2-sozoranga-macara",
+    "name": "SOZORANGA - MACARÁ / PENJAMO",
+    "source": "https://www.mit.gob.ec/mit-y-los-gad-locales-articulan-acciones-para-mantener-operativa-la-red-vial-en-el-sur-del-ecuador/"
+  },
+  {
+    "geometryId": "osm-v2-sozoranga-macara",
+    "name": "Sozoranga - Macará",
+    "source": "https://www.mit.gob.ec/mit-y-los-gad-locales-articulan-acciones-para-mantener-operativa-la-red-vial-en-el-sur-del-ecuador/"
+  },
+  {
+    "geometryId": "osm-v2-catacocha-macara",
+    "name": "CATACOCHA - EL EMPALME - LUCARQUI -MACARÁ",
+    "source": "https://www.mit.gob.ec/el-mit-activa-nuevos-frentes-de-trabajo-para-proteger-la-infraestructura-vial-ante-el-fenomeno-de-el-nino/"
+  },
+  {
+    "geometryId": "osm-v2-toachi-santo-domingo",
+    "name": "TRAMO UNIÓN DEL TOACHI - SANTO DOMINGO (VÍA ALOAG - SANTO DOMINGO)",
+    "source": "https://www.gptsachila.gob.ec/estudioambiental2/documentos/ESTUDIODEIMPACTOAMBIENTALDELAVIAALOAGSANTODOMINGO.pdf"
+  },
+  {
+    "geometryId": "osm-v2-toachi-santo-domingo",
+    "name": "Unión del Toachi - Santo Domingo",
+    "source": "https://www.gptsachila.gob.ec/estudioambiental2/documentos/ESTUDIODEIMPACTOAMBIENTALDELAVIAALOAGSANTODOMINGO.pdf"
+  },
+  {
+    "geometryId": "osm-v2-puentes-gemelos",
+    "name": "Puentes Gemelos",
+    "source": "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2024/06/RVE-VIE28JUN.pdf"
+  }
+]
+

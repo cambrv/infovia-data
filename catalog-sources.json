@@ -1,0 +1,27 @@
+[
+  {
+    "path": "public/data/red_vial_estatal_2026.geojson",
+    "url": "https://infovia-ec-api.vercel.app/data/red_vial_estatal_2026.geojson",
+    "gitBlob": "d6ae14f1cc78f2b2a8111051f2ea60a9503870a2"
+  },
+  {
+    "path": "public/geo/infovia_ec_catalogo_fijo.geojson",
+    "url": "https://infovia-ec-api.vercel.app/geo/infovia_ec_catalogo_fijo.geojson",
+    "gitBlob": "062c8a7d0693c720f5b64d92027a2d9e5a688ce3"
+  },
+  {
+    "path": "public/geo/infovia_ec_trazados_pendientes_osm.geojson",
+    "url": "https://infovia-ec-api.vercel.app/geo/infovia_ec_trazados_pendientes_osm.geojson",
+    "gitBlob": "37c1a5e13a4b1036ae117398d4d64249787ec8ec"
+  },
+  {
+    "path": "public/geo/InfoViaEC_10_referencias_NO_trazados.geojson",
+    "url": "https://infovia-ec-api.vercel.app/geo/InfoViaEC_10_referencias_NO_trazados.geojson",
+    "gitBlob": "cab5b4b1c87fd0235a9ecf0921c2acc2cc5acd87"
+  },
+  {
+    "path": "public/geo/infovia_ec_ampliacion_v2.geojson",
+    "url": "https://infovia-ec-api.vercel.app/geo/infovia_ec_ampliacion_v2.geojson",
+    "gitBlob": "393803312cb25877c1b77700dfb311a7ad4199c9"
+  }
+]

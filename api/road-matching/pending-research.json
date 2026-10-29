@@ -1,0 +1,37 @@
+[
+  {
+    "name": "SANTA ROSA DE AGUA CLARA",
+    "province": "BOLIVAR",
+    "reason": "Localidad documentada junto a Bucay/Pallatanga y al acceso Chillanes–Santa Rosa. El reporte no identifica cuál de esas vías está afectada. La alterna La Mirán tampoco delimita un tramo. Falta carretera de referencia o coordenada institucional; no se asigna toda Chillanes–Bucay.",
+    "consulted": "2026-10-27",
+    "sources": [
+      "https://www.salud.gob.ec/wp-content/uploads/2021/12/DIAGNOSTICO-COVID-19-CZ-5-1.pdf",
+      "https://www.bolivar.gob.ec/wp-content/uploads/2025/05/Revista-Chillanes-5.pdf",
+      "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2018/12/LOTAIP_10_K006-MTOP-Construccion-y-Fiscalizacion-de-la-carretera-Chillanes-Bucay-Construccion.pdf"
+    ]
+  },
+  {
+    "name": "VICHE - RECINTO CHURA - QUININDE",
+    "province": "ESMERALDAS",
+    "reason": "Chura dispone de una conexión marginal distinta de la E20. El título menciona Chura, pero la observación El Mirador km 71 coincide con el sector documentado de la E20 Esmeraldas–Quinindé. Falta aclarar si el reporte se refiere a la carretera marginal por Chura o a la E20; no se elige una por semejanza.",
+    "consulted": "2026-10-27",
+    "sources": [
+      "https://laamerica.gob.ec/media/gadviche/pdot_archivos/PDYOT.pdf",
+      "https://gadparroquialviche.gob.ec/media/chura/pdot_archivos/PDOT-CHURA-2019-2023-1.pdf",
+      "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2025/06/RVE-VIE06JUN.pdf"
+    ]
+  },
+  {
+    "name": "VIA OLMEDO - CHAGUARPAMBA",
+    "province": "LOJA",
+    "reason": "El enlace intercantonal Olmedo–Chaguarpamba y la E50 por la Y de Olmedo son referencias diferentes. El candidato OSM continuo porta ref=E50, pero solo 13% de sus vértices muestreados está a 300 m de la RVE. El PDOT municipal distingue ambas vías y el reporte no permite escoger. Falta confirmar el itinerario o sector afectado; se retiene el candidato fuera del catálogo público.",
+    "consulted": "2026-10-27",
+    "sources": [
+      "https://gadchaguarpamba.gob.ec/index.php/component/phocadownload/category/122-rc-2025?download=1543%3Apdot-plan-de-desarrollo-y-ordenamiento-territorial-chaguarpamba-2023-2027",
+      "https://www.gadchaguarpamba.gob.ec/index.php?catid=12&id=21&view=article",
+      "https://gobernacionzamora.gob.ec/mtop-habilito-vias-en-la-zona-7/",
+      "https://gobernacionloja.gob.ec/gobierno-entrega-asistencia-humanitaria-en-chaguarpamba/"
+    ]
+  }
+]
+
