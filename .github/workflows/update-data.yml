@@ -20,19 +20,43 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npm run check && npm test
-      - name: Extraer Portal Ecuador y validar las geometrías
-        run: npm run sync
-      - name: Publicar únicamente una extracción completa y válida
+      - name: Extraer, validar y publicar sin sobrescribir cambios concurrentes
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/ catalog/
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'data: actualizar Portal Ecuador'
-          git push origin HEAD:main
+
+          for intento in 1 2 3; do
+            echo "Intento de publicación ${intento}/3"
+            # Solo se descarta el estado local efímero del runner; nunca se fuerza el remoto.
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Reextraer tras sincronizar: preserva validaciones frente al último JSON publicado.
+            npm run sync
+            git add data/ catalog/
+            if git diff --cached --quiet; then
+              echo "Sin cambios para publicar."
+              exit 0
+            fi
+
+            git commit -m 'data: actualizar Portal Ecuador'
+            if git push origin HEAD:main; then
+              echo "Publicación correcta."
+              exit 0
+            fi
+            echo "Push rechazado. Se volverá a extraer desde el HEAD remoto actual."
+            sleep 3
+          done
+
+          echo "::error::No se pudo publicar tras tres intentos. El remoto conserva su último snapshot válido."
+          exit 1
