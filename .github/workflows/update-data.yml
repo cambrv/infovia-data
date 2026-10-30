@@ -7,7 +7,7 @@ on:
       - 'catalog/**'
       - 'README.md'
   schedule:
-    - cron: '9,24,39,54 * * * *'
+    - cron: '3,8,13,18,23,28,33,38,43,48,53,58 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -26,9 +26,35 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - name: Comprobar antigüedad de los datos publicados
+        id: cadence
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, appendFileSync } from 'node:fs';
+          let refresh = true;
+          if (process.env.GITHUB_EVENT_NAME === 'schedule') {
+            try {
+              const manifest = JSON.parse(readFileSync('data/manifest.json', 'utf8'));
+              const last = Date.parse(manifest.generatedAt);
+              const age = Date.now() - last;
+              if (Number.isFinite(age) && age >= 0 && age < 15 * 60_000) {
+                refresh = false;
+                console.log('Últimos datos publicados hace menos de 15 minutos; se omite esta ejecución.');
+              }
+            } catch (error) {
+              console.warn('No se pudo verificar el manifiesto; se intentará extraer:', error.message);
+            }
+          }
+          appendFileSync(process.env.GITHUB_OUTPUT, 'refresh=' + refresh + '\n');
+          if (refresh) console.log('Corresponde ejecutar la extracción y publicación.');
+          NODE
       - run: npm ci --ignore-scripts
+        if: steps.cadence.outputs.refresh == 'true'
       - run: npm run check && npm test
+        if: steps.cadence.outputs.refresh == 'true'
       - name: Extraer, validar y publicar sin sobrescribir cambios concurrentes
+        if: steps.cadence.outputs.refresh == 'true'
         shell: bash
         run: |
           set -euo pipefail
